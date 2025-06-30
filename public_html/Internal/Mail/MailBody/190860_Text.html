@@ -1,0 +1,50 @@
+Hi<br />
+<br />
+As discussed on the phone, we will not be coming to you to flash firmware<br />
+onto the remaining boards you have to be reworked due to COVID rules.<br />
+<br />
+However as I mentioned, there is another way to test this reworked part<br />
+(U11) without firmware, though it is not quite as neat!<br />
+<br />
+You can manually enable the power supply (U11) by applying 3.3V to its<br />
+enable pin as shown below. In this case, you will need to either use an<br />
+external 3.3V supply (with a common ground with the board) or use the<br />
+board's own 3.3V supply (the easiest place to find this is the left side of<br />
+C81).<br />
+<br />
+[image: image.png]<br />
+<br />
+<br />
+Therefore the test sequence is:<br />
+<br />
+   1. Connect a USB cable to the board's Micro USB connector to power it<br />
+   2. Temporarily connect 3.3V from either an external supply or the left<br />
+   side of C81 to the bottom of the resistor highlighted above (next to the<br />
+   text 'R51')<br />
+   3. Measure the voltage on the right side of C52 or C88, which are just<br />
+   below U11<br />
+   4. If this voltage is ~3.6V then the board is fine<br />
+<br />
+If the above is not something you are able to do then we will have to go<br />
+with 'plan B' and ask you to modify 10 boards and return them to Spacelab<br />
+for testing.<br />
+<br />
+Regarding the outstanding invoice, that should be paid by now, or at least<br />
+is in the process of being sorted!<br />
+<br />
+<br />
+Kind regards<br />
+<br />
+Angus<br />
+<br />
+<br />
+-- <br />
+Angus Thomson<br />
+<br />
+CircuitBuilder<br />
+angus@circuit-builder.com<br />
+Website: circuit-builder.com<br />
+Mobile: +44 (0)7813 704 310<br />
+Office: +44 (0)330 133 0606<br />
+<https://www.linkedin.com/company/13981234><br />
+<https://www.twitter.com/circuitbuilder><br />

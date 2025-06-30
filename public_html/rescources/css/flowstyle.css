@@ -1,0 +1,161 @@
+.flow-ctn{
+	/*710,1268*/
+	width:678px;
+	height:1236px;
+	padding:15px;
+	border:1px solid #cbcbcb;
+	vertical-align:middle;
+}
+    .flowBG1
+    {
+    background:#f8f8f8 url(../images/f-1.png) no-repeat center center; 
+    }
+    .flowBG2
+    {
+    background:#f8f8f8 url(../images/f-2.png) no-repeat center center; 
+    }
+    .flowBG3
+    {
+    background:#f8f8f8 url(../images/f-3.png) no-repeat center center; 
+    }
+.flow-ctn .flow,
+.flow-ctn .flow span{
+	display:inline-block;
+	word-break: break-all;
+	vertical-align:middle;
+	font-size:13px;
+}
+.flow-ctn .flow span{	
+	text-align:center;
+}
+.flow-ctn .flow label{
+	color:#545454;
+	display:block;
+	text-align:center;
+	line-height:20px;
+	font-weight:normal;
+}
+.flow-ctn .clear{
+	clear:both;
+	height:0;
+	overflow:hidden;
+}
+
+
+/**********48***********/
+.flow-ctn .f48{
+	color:#000;
+}
+.flow-ctn .f48-2{
+	color:#fff;
+}
+.flow-ctn .f48,
+.flow-ctn .f48-2,
+.flow-ctn .f48 span,
+.flow-ctn .f48-2 span{
+	height:48px;
+	line-height:43px;
+}
+/*@gray*/
+.flow-ctn .f48 .fl{
+	width:10px;
+	background:url(../images/f48_@gray_l.png) no-repeat left top;
+}
+.flow-ctn .f48 .fm{
+	background:url(../images/f48_@gray_m.png) repeat-x;
+}
+.flow-ctn .f48 .fr{
+	width:10px;
+	background:url(../images/f48_@gray_r.png) no-repeat right top;
+}
+/*@org*/
+.flow-ctn .f48-2 .fl{
+	width:10px;
+	background:url(../images/f48_@org_l.png) no-repeat left top;
+}
+.flow-ctn .f48-2 .fm{
+	background:url(../images/f48_@org_m.png) repeat-x;
+}
+.flow-ctn .f48-2 .fr{
+	width:10px;
+	background:url(../images/f48_@org_r.png) no-repeat right top;
+}
+
+/**********60***********/
+.flow-ctn .f60{
+	color:#000;
+}
+.flow-ctn .f60-2{
+	color:#fff;
+}
+.flow-ctn .f60,
+.flow-ctn .f60-2,
+.flow-ctn .f60 span,
+.flow-ctn .f60-2 span{
+	height:60px;
+	line-height:20px;
+}
+/*@gray*/
+.flow-ctn .f60 .fl{
+	width:10px;
+	background:url(../images/f60_@gray_l.png) no-repeat left top;
+}
+.flow-ctn .f60 .fm{
+	background:url(../images/f60_@gray_m.png) repeat-x;
+}
+.flow-ctn .f60 .fr{
+	width:10px;
+	background:url(../images/f60_@gray_r.png) no-repeat right top;
+}
+/*@org*/
+.flow-ctn .f60-2 .fl{
+	width:10px;
+	background:url(../images/f60_@org_l.png) no-repeat left top;
+}
+.flow-ctn .f60-2 .fm{
+	background:url(../images/f60_@org_m.png) repeat-x;
+}
+.flow-ctn .f60-2 .fr{
+	width:10px;
+	background:url(../images/f60_@org_r.png) no-repeat right top;
+}
+
+/**********81***********/
+.flow-ctn .f81{
+	color:#000;
+}
+.flow-ctn .f81-2{
+	color:#fff;
+}
+.flow-ctn .f81,
+.flow-ctn .f81-2,
+.flow-ctn .f81 span,
+.flow-ctn .f81-2 span{
+	height:81px;
+	line-height:20px;
+}
+/*@gray*/
+.flow-ctn .f81 .fl{
+	width:10px;
+	background:url(../images/f81_@gray_l.png) no-repeat left top;
+}
+.flow-ctn .f81 .fm{
+	background:url(../images/f81_@gray_m.png) repeat-x;
+}
+.flow-ctn .f81 .fr{
+	width:10px;
+	background:url(../images/f81_@gray_r.png) no-repeat right top;
+}
+/*@org*/
+.flow-ctn .f81-2 .fl{
+	width:10px;
+	background:url(../images/f81_@org_l.png) no-repeat left top;
+}
+.flow-ctn .f81-2 .fm{
+	width:10px;
+	background:url(../images/f81_@org_m.png) repeat-x;
+}
+.flow-ctn .f81-2 .fr{
+	width:10px;
+	background:url(../images/f81_@org_r.png) no-repeat right top;
+}

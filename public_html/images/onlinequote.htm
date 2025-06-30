@@ -1,0 +1,193 @@
+﻿<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+<style type="text/css">
+.style2 {
+				font-size: large;
+}
+</style>
+</head>
+
+<script type="text/javascript">
+
+// return the value of the radio button that is checked
+// return an empty string if none are checked, or
+// there are no radio buttons
+function getCheckedValue(radioObj) 
+{
+	if(!radioObj)
+		return "";
+	var radioLength = radioObj.length;
+	if(radioLength == undefined)
+		if(radioObj.checked)
+			return radioObj.value;
+		else
+			return "";
+	for(var i = 0; i < radioLength; i++) {
+		if(radioObj[i].checked) {
+			return radioObj[i].value;
+		}
+	}
+	return "";
+}
+
+function getsizeband(size)
+{
+
+ if(0<size && size<=100000)
+ {
+ return 99.99;
+ }
+ if(100000<size && size<=200000)
+ {return 119.99;
+ }
+if(200000<size && size<=300000)
+ {return 139.99;
+ }
+if(300000<size && size<=400000)
+ {return 139.99;
+ }
+if(400000<size && size<=500000)
+ {return 149.99;
+ }
+if(500000<size && size<=1000000)
+ {return 159.99;
+ }
+if(1000000<size && size<=10000000)
+ {return 199.99;
+ }
+if(10000000<size && size<=15900000)
+ {return 219.99;
+ }
+
+else 
+ {
+alert("Please contact us for your special offer!");
+      return;
+ }
+}
+
+
+ function calculate_total()
+ {
+   var t1 = 0;
+   var t2 = 0;
+   var t3 = 0;
+   var t4 = 0;
+   var t5 = 0;
+   var t6 = 0;
+   var t7 = 0;
+   var len = document.calc.length.value;
+   var wid = document.calc.width.value;
+ //  var thick = document.calc.frame.value;
+   var quan = document.calc.quantity.value;
+      
+   if (document.calc.length.value <10 || document.calc.length.value>600)
+   {
+     alert("The board length should between 10 to 600 mm");
+      return;
+   }
+
+   if (document.calc.width.value <10 || document.calc.width.value>530)
+   {
+       alert("The board length should between 10 to 530 mm");
+      return;
+   }
+
+
+   if (document.calc.quantity.value <1)
+   {
+   alert("You should put correct value!");
+   return;
+   }
+   
+   if(document.calc.quantity.value>50)
+   {
+   alert("You can contact us for even better offer for large volume!");
+   return;
+   }
+// if it is integer value.
+  if(parseInt(document.calc.quantity.value)!=document.calc.quantity.value)
+   {
+     alert("You should put a integer as the board quantity!");
+     return;
+   }
+ 
+// var re = /^[1-9]+[0-9]*]*$/； 
+// if (!re.test(document.calc.quantity.value))   
+//   {
+//   alert("You should put a integer as the board quantity!");
+ //   return;
+//   }
+             
+  
+//t1 is singal board size.
+   t1 = len * wid;
+//t2 is the total board size.    
+      t2=t1 * quan
+//b1 is the size band 
+var b1=getsizeband(t2)
+
+//t3 is the layers weight.
+   t3 = getCheckedValue(document.calc.layer);
+   
+   t4=t3 * b1;   
+//t4 is value with layers weight.
+//t5 is the days weight.
+t5 = getCheckedValue(document.calc.days);
+//t6 is the value with layers and days weight.
+t6= t4 * t5;
+//t7 is to get only 2 float value.
+t7 = Math.round(t6*100)/100;
+
+document.getElementById('total').value = t7;
+
+
+} // end function definition
+ 
+ 
+</script>
+<span class="style2"><strong>PCB price check online
+</strong></span>
+<form name="calc" id="calc" action="sendok.asp?url=test.asp&mailto=gelukmobile@hotmail.com">,
+
+<br>
+&nbsp;1.Board layer: <input name="layer" type="radio" checked value="0.9">1
+<input name="layer" type="radio" style="width: 20px" value="1">2
+<input name="layer" type="radio" value="1.5">4 <br>
+2.Quantity: <input name="quantity" type="text"><br>
+3.Length in mm: <input type="text" name="length" />(10 to 600mm)<br />
+4.Width in mm: <input type="text" name="width"  />(10 to 530mm)<br>
+5.Base material:<select name="Select2" style="width: 87px">
+<option></option>
+<option>FR4</option>
+</select><br>
+6.Thickness: <input name="Radio1" type="radio">0.8mm
+				<input name="Radio1" type="radio">1.0mm
+				<input name="Radio1" type="radio">1.6mm
+				<input name="Radio1" type="radio">2.0mm<br>
+				7.Copper weight: <input name="Radio1" type="radio">0.5oz
+				<input name="copper" type="radio" checked="checked" value="1">1.0oz
+				<input name="Radio1" type="radio">2.0oz<br>
+				8.Soldermask:<input name="Radio1" type="radio" value="16">only 
+top <input name="Radio1" type="radio" value="17">only bottom
+				<input name="Radio1" type="radio" value="18">both top and bottom
+				<input name="Radio1" type="radio" value="19">no<br>
+				9.Silkscreen: <input name="Radio1" type="radio">only top
+				<input name="Radio1" type="radio">only bottom
+				<input name="Radio1" type="radio">both top and bottom
+				<input name="Radio1" type="radio">no<br>
+				10.Surface: <input name="Radio1" type="radio" checked>HASL <input name="Radio1" type="radio">OSP
+				<input name="Radio1" type="radio"> Electroless Nickel / Immersion 
+Gold <input name="Radio1" type="radio"> Silver <br>
+11.Delivery time in WDs: 
+<input name="days" type="radio" checked="checked" value="1.1">7
+<input name="days" type="radio" style="width: 20px" value="1">8 
+<input name="days" type="radio" value="0.95">10<br>
+
+Total in GBP (incl. VAT): <input id="total" name="total"/> pounds.</form> 
+
+
+<input name="Button1" onclick="calculate_total()" type="button" value="Calculate" height="10" style="width: 77px">
+<form method="post">
+</form>

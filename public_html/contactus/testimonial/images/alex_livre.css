@@ -1,0 +1,186 @@
+BODY {
+	BACKGROUND-COLOR: #ffffff; FONT-FAMILY: Verdana, Helvetica, sans-serif; COLOR: #000000; FONT-SIZE: 0.7em
+}
+.body_txt {
+	WIDTH: 750px; MARGIN-LEFT: auto; MARGIN-RIGHT: auto
+}
+A {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+IMG {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+ABBR {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+ACRONYM {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+FRAME {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #cc3300; TEXT-DECORATION: underline
+}
+A.a_info_code:link {
+	COLOR: #3a3a3a; TEXT-DECORATION: none
+}
+A.a_info_code:visited {
+	COLOR: #3a3a3a; TEXT-DECORATION: none
+}
+A.a_info_code:hover {
+	COLOR: #3a3a3a; TEXT-DECORATION: underline
+}
+A.a_copyright:link {
+	COLOR: #737373; TEXT-DECORATION: none
+}
+A.a_copyright:visited {
+	COLOR: #737373; TEXT-DECORATION: none
+}
+A.a_copyright:hover {
+	COLOR: #737373; TEXT-DECORATION: underline
+}
+INPUT {
+	BORDER-BOTTOM: #757575 1px solid; BORDER-LEFT: #757575 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; FONT-SIZE: 1em; BORDER-TOP: #757575 1px solid; BORDER-RIGHT: #757575 1px solid
+}
+TEXTAREA {
+	BORDER-BOTTOM: #757575 1px solid; BORDER-LEFT: #757575 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; FONT-SIZE: 1em; BORDER-TOP: #757575 1px solid; BORDER-RIGHT: #757575 1px solid
+}
+SELECT {
+	BORDER-BOTTOM: #757575 1px solid; BORDER-LEFT: #757575 1px solid; FONT-FAMILY: Verdana, Helvetica, sans-serif; FONT-SIZE: 1em; BORDER-TOP: #757575 1px solid; BORDER-RIGHT: #757575 1px solid
+}
+INPUT.i_text {
+	BORDER-BOTTOM: #757575 1px solid; BORDER-LEFT: #757575 1px solid; WIDTH: 200px; FONT-FAMILY: Verdana, Helvetica, sans-serif; FONT-SIZE: 1em; BORDER-TOP: #757575 1px solid; BORDER-RIGHT: #757575 1px solid
+}
+INPUT.i_focus {
+	BORDER-BOTTOM: #007e00 1px solid; BORDER-LEFT: #007e00 3px solid; BACKGROUND-COLOR: #ebffeb; PADDING-LEFT: 2px; WIDTH: 200px; BORDER-TOP: #007e00 1px solid; BORDER-RIGHT: #007e00 1px solid
+}
+INPUT.btn_add {
+	COLOR: #373737; FONT-SIZE: 1em; CURSOR: pointer; FONT-WEIGHT: bold
+}
+INPUT.btn_search {
+	COLOR: #373737; CURSOR: pointer; FONT-WEIGHT: bold
+}
+INPUT.i_nbre_car {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BACKGROUND-COLOR: transparent; COLOR: #cc3300; FONT-SIZE: 1em; BORDER-TOP: 0px; FONT-WEIGHT: bold; BORDER-RIGHT: 0px
+}
+INPUT.i_nbre_car_focus {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BACKGROUND-COLOR: #ebffeb; COLOR: #cc3300; FONT-SIZE: 1em; BORDER-TOP: 0px; FONT-WEIGHT: bold; BORDER-RIGHT: 0px
+}
+TEXTAREA.i_comment {
+	BORDER-BOTTOM: #757575 1px solid; BORDER-LEFT: #757575 1px solid; WIDTH: 430px; FONT-FAMILY: Verdana, Helvetica, sans-serif; FONT-SIZE: 1em; BORDER-TOP: #757575 1px solid; BORDER-RIGHT: #757575 1px solid
+}
+TEXTAREA.i_comment_focus {
+	BORDER-BOTTOM: #007e00 1px solid; BORDER-LEFT: #007e00 3px solid; BACKGROUND-COLOR: #ebffeb; PADDING-LEFT: 2px; WIDTH: 430px; BORDER-TOP: #007e00 1px solid; BORDER-RIGHT: #007e00 1px solid
+}
+FORM {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+IMG.img_left {
+	FLOAT: left
+}
+.d_title {
+	TEXT-ALIGN: center; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #cc3300; FONT-SIZE: 2em; FONT-WEIGHT: bold
+}
+.d_note {
+	TEXT-ALIGN: center; FONT-FAMILY: Verdana, Helvetica, sans-serif; COLOR: #000000; FONT-SIZE: 1em
+}
+.d_add_msg {
+	TEXT-ALIGN: center
+}
+.d_f_add_msg {
+	PADDING-BOTTOM: 4px; WIDTH: 450px; BACKGROUND: url(background_add_msg.png) #f3f3f3; COLOR: #3a3a3a; MARGIN-LEFT: auto; MARGIN-RIGHT: auto; PADDING-TOP: 4px
+}
+.d_add_msg_h {
+	WIDTH: 450px; BACKGROUND: url(border_h.png) #f3f3f3 no-repeat; HEIGHT: 4px; MARGIN-LEFT: auto; MARGIN-RIGHT: auto
+}
+.d_add_msg_b {
+	WIDTH: 450px; BACKGROUND: url(border_b.png) #f3f3f3 no-repeat; HEIGHT: 4px; MARGIN-LEFT: auto; MARGIN-RIGHT: auto
+}
+.add_msg_left {
+	TEXT-ALIGN: left; MARGIN-TOP: 2px; PADDING-LEFT: 10px; WIDTH: 160px; FLOAT: left; HEIGHT: 23px; CLEAR: both
+}
+.add_msg_right {
+	TEXT-ALIGN: left; HEIGHT: 25px
+}
+.reponse {
+	BORDER-BOTTOM: #b4b4b4 1px solid; BORDER-LEFT: #b4b4b4 1px solid; PADDING-BOTTOM: 5px; BACKGROUND-COLOR: #ffffff; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BORDER-TOP: #b4b4b4 1px solid; BORDER-RIGHT: #b4b4b4 1px solid; PADDING-TOP: 5px
+}
+.code_sec {
+	TEXT-ALIGN: center; FONT-FAMILY: Courier New; FONT-SIZE: 1.1em
+}
+.d_center {
+	TEXT-ALIGN: center
+}
+.copyright {
+	TEXT-ALIGN: center; FONT-FAMILY: Arial, Helvetica, sans-serif; COLOR: #444444; FONT-SIZE: 1em
+}
+.d_nbre_car {
+	TEXT-ALIGN: left; MARGIN: -18px 0px 0px 16px
+}
+.d_smileys {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 3px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; PADDING-TOP: 3px
+}
+.body_all {
+	TEXT-ALIGN: center
+}
+.d_nb_mess_page {
+	PADDING-BOTTOM: 1px; BACKGROUND-COLOR: #4a7dac; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; HEIGHT: 15px; FONT-WEIGHT: bold; PADDING-TOP: 1px
+}
+SPAN.color_d_nb_mess_page1 {
+	COLOR: #dddddd
+}
+SPAN.color_d_nb_mess_page2 {
+	COLOR: #ffffff
+}
+.three1 {
+	TEXT-ALIGN: left; PADDING-LEFT: 3px; WIDTH: 35%; FLOAT: left
+}
+.three2 {
+	TEXT-ALIGN: center; WIDTH: 29%; FLOAT: left
+}
+.three3 {
+	TEXT-ALIGN: right; WIDTH: 35%; PADDING-RIGHT: 3px; FLOAT: right
+}
+.d_liste_page {
+	PADDING-BOTTOM: 1px; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; HEIGHT: 15px; PADDING-TOP: 1px
+}
+.three1_2 {
+	TEXT-ALIGN: left; WIDTH: 25%; FLOAT: left
+}
+.three2_2 {
+	TEXT-ALIGN: center; WIDTH: 49%; FLOAT: left
+}
+.three3_2 {
+	TEXT-ALIGN: right; WIDTH: 25%; FLOAT: right
+}
+SPAN.Gris_prec_suiv {
+	COLOR: #c0c0c0
+}
+.d_corps_msg {
+	BORDER-BOTTOM: #757575 1px solid; TEXT-ALIGN: left; BORDER-LEFT: #757575 1px solid; PADDING-BOTTOM: 4px; BACKGROUND-COLOR: #f3f3f3; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; BORDER-TOP: #757575 1px solid; BORDER-RIGHT: #757575 1px solid; PADDING-TOP: 4px
+}
+.d_pseudo {
+	COLOR: #cc3300; FONT-WEIGHT: bold
+}
+.d_date {
+	TEXT-ALIGN: right; WIDTH: 145px; FLOAT: right; COLOR: #cc3300
+}
+.d_code1 {
+	TEXT-ALIGN: right; WIDTH: 238px; DISPLAY: inline; FLOAT: left; HEIGHT: 20px
+}
+.d_code2 {
+	TEXT-ALIGN: left; DISPLAY: inline; FLOAT: left; HEIGHT: 20px
+}
+.d_submit_msg {
+	TEXT-ALIGN: center; CLEAR: both
+}
+.d_note_user {
+	TEXT-ALIGN: left; COLOR: #878787; FONT-WEIGHT: bold
+}

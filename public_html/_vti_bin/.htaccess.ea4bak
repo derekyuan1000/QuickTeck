@@ -1,0 +1,18 @@
+# -FrontPage-
+
+# For security reasons, Option followsymlinks cannot be overridden.
+#Options +FollowSymlinks
+Options +SymLinksIfOwnerMatch
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthName quick-teck.co.uk
+AuthUserFile /home/quickte2/public_html/_vti_pvt/service.pwd
+AuthGroupFile /home/quickte2/public_html/_vti_pvt/service.grp

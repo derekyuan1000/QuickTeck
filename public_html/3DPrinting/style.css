@@ -1,0 +1,20 @@
+*{font-family:Microsoft YaHei;}
+#upload{width:300px;text-align:center;padding:10px;background-color:#608DDF;color:white;cursor:pointer;margin:0px auto; }
+#upload2{width:300px;text-align:center;padding:10px;background-color:#cccccc;color:white;cursor:pointer;margin:0px auto;}
+#upload:hover{background-color:#5E83C5;}
+#con{width:100%;height:200px;background-color:#555;}
+
+#progressBg {
+display: block;
+height: 19px;
+background: url('../images/progress2.png') center center no-repeat;
+width: 100%;
+}
+#progressRun {
+left: 30px;
+top: 0;
+display: block;
+height: 19px;
+width: 0%;
+background: url('../images/progress.png') right center no-repeat;
+}

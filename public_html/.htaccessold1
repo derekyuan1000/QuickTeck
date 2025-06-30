@@ -1,0 +1,10 @@
+# TURNED FCGI ON TO REDUCE RESOURCE USAGE
+AddHandler fcgid-script .php
+
+# Use PHP5 as default
+
+#AddHandler application/x-httpd-php5 .php
+<Files *>
+ Options -Indexes
+</Files>
+AddHandler application/x-httpd-php54 .php

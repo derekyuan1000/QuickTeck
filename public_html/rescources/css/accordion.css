@@ -1,0 +1,57 @@
+.dialogWindowBin
+{
+	border-right: #ccc 1px solid;
+	padding-right: 10px;
+	border-top: #ccc 1px solid;
+	display: none;
+	padding-left: 10px;
+	background: #f9f9f9;
+	left: 0px;
+	padding-bottom: 10px;
+	border-left: #ccc 1px solid;
+	padding-top: 10px;
+	border-bottom: #ccc 1px solid;
+	position: absolute;
+	top: 0px;
+}
+INPUT[type=radio]
+{
+	margin: 5px;
+}
+.hide
+{
+	display: none;
+}
+#accordion ul
+{
+	font-size: 14px;
+}
+#accordion ul li
+{
+	margin: 8px;
+}
+#accordion ul li h3
+{
+	padding: 10px 20px;
+	font-weight: normal;
+	background: url(../images/left_nav.gif) no-repeat center;
+}
+#accordion ul div
+{
+	margin: 5px 20px;
+}
+#accordion ul div a
+{
+	text-decoration: none;
+	display: block;
+	line-height: 23px;
+}
+.down
+{
+	background: url(../images/left_nav2.gif) no-repeat center;
+}
+.up
+{
+	background: url(../images/left_nav3.gif) no-repeat center;
+	color: #f30;
+}

@@ -1,0 +1,28 @@
+#GURU PREVENT POST SPAM
+RewriteEngine On
+RewriteCond %{THE_REQUEST} /fastquote/fast_quote_form.php? [NC]
+RewriteCond %{REQUEST_METHOD} ^POST [NC]
+RewriteRule ^ - [F,L]
+#END GURU PREVENT POST SPAM
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]]
+
+# Use PHP5.4 Single php.ini as default
+#AddHandler application/x-httpd-php5 .php
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress
+Options -Indexes
+# php -- BEGIN cPanel-generated handler, do not edit
+# This domain inherits the “PHP” package.
+# php -- END cPanel-generated handler, do not edit

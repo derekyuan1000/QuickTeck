@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 注意，必须按照顺序引入以下2个脚本，才可以正常显示模型
+		※	three.js
+		※	STL.js
+		
+	那个jquery.js并不必要，仅仅是在这个示例里使用。
+-->
+<script src="jquery.js"></script>
+<script src="STL/three.js"></script>
+<script src="STL/STL.js" charset="utf-8"></script>
+<link rel="stylesheet" href="style.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<style>
+
+</style>
+</head>
+<body style="margin:0">
+	<div>
+		<div>
+			<div id="upload">Upload 3d printer model (*.STL)</div>
+		</div>
+		<div id="con" style="width:100%;height:400px;"></div>
+		<div align="center">upload process：<span id="progressNumber"> - </span></div>
+		<table>
+			<tr>
+				<td>size</td>
+				<td id="size">...</td>
+			</tr>
+			<tr>
+				<td>volume</td>
+				<td id="volume">...</td>
+			</tr>
+			<tr>
+				<td>surface area</td>
+				<td id="area">...</td>
+			</tr>
+		</table>
+	<div>
+</body>
+
+<script>
+$("#upload").click(function(){
+	var fileDOM=$('<input type="file" name="file" id="file" style="display:none"/>').appendTo($("body"));//插入一个隐藏的file dom。
+	$("#file").change(function(){
+		if(this.files.length!=0){
+			//本示例仅供参考演示接口。
+			var fd = new FormData();
+			var ajax = new XMLHttpRequest();
+			fd.append("file", document.getElementById('file').files[0]);//获取上传的文件
+			ajax.open("post", "upload.php", true);
+			ajax.upload.addEventListener("progress", function(evt){
+				if (evt.lengthComputable) {
+					var percentComplete = Math.round(evt.loaded * 100 / evt.total);
+					document.getElementById('progressNumber').innerHTML = percentComplete.toString() + '%';
+					if(percentComplete.toString()=="100"){
+						document.getElementById('progressNumber').innerHTML = "rending...";
+						$("#upload").show();
+					}else{
+						$("#upload").hide();
+					}
+				  }
+				  else {
+					document.getElementById('progressNumber').innerHTML = 'unable to compute';
+				  }
+			}, false);
+			
+
+			ajax.onload = function () {
+				console.log(ajax.responseText);
+				var e=ajax.responseText;
+				var result=eval('('+e+')');//返回json结果，并把它变为js对象。
+				if(result.message=="error"){
+					alert("错误,error。");
+					return;
+				}
+				
+				//在页面上显示相关数值
+				$("#size").text(result.width.toFixed(2)+"mm * "+result.height.toFixed(2)+"mm * "+result.depth.toFixed(2)+"mm");
+				$("#volume").html(result.volume.toFixed(2)+" mm&sup3;");
+				$("#area").html(result.area.toFixed(2)+" mm&sup2;");
+				
+				$("#con").children().remove();
+				
+				
+				//必须设定全局变量thingiurlbase，指向的是/STL文件夹(里面有几个JS脚本，请勿删除、修改任何脚本，否则插件将无法工作)。
+				thingiurlbase = "STL";
+				//核心函数 displaySTL
+				//需要传入一个设置对象，他分别有下面的值：
+				//
+				//		dom		表明要显示的那个dom元素的ID。
+				//		width		表明显示的宽度
+				//		height	表明显示的高度
+				//		file		表明要显示的STL文件，他应该是服务器上的某个位置，比如"/upload/1.stl"，具体的请看upload.php
+				displaySTL({
+					dom:"con",
+					width:$("#con").width(),
+					height:$("#con").height(),
+					file:"../"+result.file
+				});
+				
+				fileDOM.remove();
+			};
+
+			ajax.send(fd);
+			
+		}
+	}).click();
+});
+</script>
+</html>
